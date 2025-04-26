@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Health information system</title>
+</head>
+<body>
+
+<header>
+  <!-- Fixed Nav with centered logo and links -->
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-3 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-400 shadow-md h-[80px]">
+    <!-- Logo Container -->
+    <div class="flex items-center justify-center h-full pb-15">
+      <a class="btn btn-ghost text-xl" href="index.html">
+        <div class="w-[120px]">
+          <img src="https://logo.com/image-cdn/images/kts928pd/production/60e599ade79ad1bfbf281f9970beb13f45b14abb-93x36.webp?w=128&q=72&fm=webp" alt="logo" class="max-h-[60px] w-auto">
+        </div>
+      </a>
+    </div>
+  
+    <!-- Navbar Links -->
+    <div class="flex-none">
+        <ul class="menu menu-horizontal flex gap-5 px-1 py-5 items-center">
+          <li><a href="/index.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Home</a></li>
+          <li><a href="/pages/About.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">About</a></li>
+          <li><a href="/pages/services.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Services</a></li>
+          <li><a href="/pages/departments.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Departments</a></li>
+          <li><a href="facilities.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Facilities</a></li>
+          <li><a href="contact.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Contact</a></li>
+          </ul>
+    </div>
+  </nav>
+  
+
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-5 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-400">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-5">About Us</h2>
+      <p class="text-lg mb-10 max-w-3xl mx-auto">
+        Our hospital is a leading healthcare provider dedicated to delivering exceptional patient care and innovative medical treatments. We are committed to providing a safe, compassionate, and modern environment for patients and their families.
+      </p>
+      
+      <div class="flex flex-wrap justify-center gap-10">
+        <!-- Mission -->
+        <div class="flex-1 max-w-[350px] bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+          <p class="text-lg">
+            Our mission is to provide comprehensive, compassionate care to every patient. We aim to improve the health and well-being of our community through state-of-the-art treatments, expert care, and an unwavering commitment to our patients.
+          </p>
+        </div>
+        
+        <!-- Vision -->
+        <div class="flex-1 max-w-[350px] bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+          <p class="text-lg">
+            We envision a world where everyone has access to affordable, quality healthcare. Our goal is to be a global leader in healthcare, continuously improving our services and patient care.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Core Values Section -->
+      <h3 class="text-3xl font-bold mt-16 mb-5">Our Core Values</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-heart"></i>
+          </div>
+          <p class="font-semibold">Compassion</p>
+          <p class="text-sm">We provide empathetic care to ensure our patients feel supported at every stage of their treatment.</p>
+        </div>
+  
+        <div class="text-center">
+          <div class="w-20 h-20 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <p class="font-semibold">Excellence</p>
+          <p class="text-sm">We are dedicated to offering the highest quality medical services, using the latest technologies and methods.</p>
+        </div>
+  
+        <div class="text-center">
+          <div class="w-20 h-20 bg-yellow-500 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <p class="font-semibold">Integrity</p>
+          <p class="text-sm">We hold ourselves to the highest ethical standards and ensure transparency and trust in all our dealings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer -->
+<footer id="contact" class="bg-violet-100 text-center py-6">
+  <div class="footer-content">
+    <p>&copy; 2024 HospitalPro. All rights reserved.</p>
+    <p>Contact us at: hospital@example.com</p>
+    <p>Phone: +254 700000000</p>
+    <p>Location: Kenya</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+
+
+Health Information System
+A simple, clean, and API-driven health information management system that allows doctors to:
+
+Create health programs (e.g., TB, Malaria, HIV).
+
+Register new clients.
+
+Enroll clients into one or more health programs.
+
+Search and view registered client profiles.
+
+Expose client profiles through a REST API for integration with other systems.
+
+🚀 Features
+Create and manage health programs.
+
+Register and manage clients.
+
+Enroll clients into multiple programs.
+
+Search and retrieve client profiles easily.
+
+Expose client profile data securely via an API.
+
+🛠️ Tech Stack
+Backend: Python (Flask) OR Node.js (Express)
+
+Database: SQLite (or In-Memory for prototype)
+
+API: RESTful endpoints
+
+Version Control: Git & GitHub
+
+📚 How to Run
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/health-info-system.git
+cd health-info-system
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt   # If Python Flask
+or
+
+bash
+Copy
+Edit
+npm install   # If Node.js Express
+Start the server:
+
+bash
+Copy
+Edit
+python app.py
+or
+
+bash
+Copy
+Edit
+npm start
+Use Postman or your browser to interact with the API.
+
+📖 API Endpoints
+POST /programs — Create a new health program
+
+POST /clients — Register a new client
+
+POST /enroll — Enroll a client into a program
+
+GET /clients — List all clients
+
+GET /client/<id> — View a client's full profile
+
+🎥 Demo
+Prototype Demonstration Video
+
+📑 Presentation
+PowerPoint Presentation
+
+🔥 Future Improvements
+Add user authentication and role-based access.
+
+Encrypt sensitive client data.
+
+Deploy to cloud (AWS/GCP).
+
+Add automated tests.
+
+
+
+POWER POINT   https://docs.google.com/presentation/d/1sWVN7N5Wmr7X3sFaLxYUVxRxdo4rOBooTWhyf0j9krU/edit?usp=sharing

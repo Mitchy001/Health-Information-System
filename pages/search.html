@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Search Clients</title>
+</head>
+<body class="font-sans bg-gray-100 min-h-screen">
+
+<!-- Header/Nav -->
+<header>
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-3 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-400 shadow-md h-[80px]">
+    <div class="flex items-center h-full">
+      <a class="btn btn-ghost text-xl" href="index.html">
+        <div class="w-[120px]">
+          <img src="https://logo.com/image-cdn/images/kts928pd/production/60e599ade79ad1bfbf281f9970beb13f45b14abb-93x36.webp?w=128&q=72&fm=webp" alt="logo" class="max-h-[60px] w-auto">
+        </div>
+      </a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal flex gap-5 px-1 py-5 items-center">
+        <li><a href="/index.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Home</a></li>
+        <li><a href="/pages/About.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">About</a></li>
+        <li><a href="/pages/services.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Services</a></li>
+        <li><a href="/pages/departments" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Departments</a></li>
+        <li><a href="/pages/facilities" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Facilities</a></li>
+        <li><a href="/pages/contact" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<main class="pt-32 px-4 flex justify-center items-center min-h-screen">
+
+  <!-- Search Client Section -->
+  <section class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+    <h2 class="text-3xl font-bold text-center mb-6">Search Clients</h2>
+
+    <input type="text" id="search-query" class="border border-gray-300 rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-violet-400 mb-6" placeholder="Search by Name or ID" onkeyup="searchClients()">
+
+    <div id="client-list">
+      <!-- Dynamic Client List will be displayed here -->
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="bg-violet-100 text-center py-6 mt-16">
+  <div class="footer-content">
+    <p>&copy; 2024 Health System. All rights reserved.</p>
+    <p>Contact us at: health@example.com</p>
+    <p>Phone: +254 700000000</p>
+    <p>Location: Kenya</p>
+  </div>
+</footer>
+
+<script src="search-client.js"></script>
+</body>
+</html>

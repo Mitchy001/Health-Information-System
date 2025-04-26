@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- ✅ Correct Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- DaisyUI (optional, keep if you're using daisy components) -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  
+
+  <title>Health information system</title>
+</head>
+<body class="font-sans">
+
+<!-- Header/Nav -->
+<header>
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-3 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-400 shadow-md h-[80px]">
+    <div class="flex items-center justify-center h-full">
+      <a class="btn btn-ghost text-xl" href="index.html">
+        <div class="w-[120px]">
+          <img src="https://logo.com/image-cdn/images/kts928pd/production/60e599ade79ad1bfbf281f9970beb13f45b14abb-93x36.webp?w=128&q=72&fm=webp" alt="logo" class="max-h-[60px] w-auto">
+        </div>
+      </a>
+    </div>
+
+    <div class="flex-none">
+      <ul class="menu menu-horizontal flex gap-5 px-1 py-5 items-center">
+        <li><a href="/index.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Home</a></li>
+        <li><a href="/pages/About.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">About</a></li>
+        <li><a href="/pages/services.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Services</a></li>
+        <li><a href="/pages/departments" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Departments</a></li>
+        <li><a href="/pages/facilities" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Facilities</a></li>
+        <li><a href="/pages/contact" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="relative pt-[80px]"> <!-- top padding to avoid nav overlap -->
+    <div class="bg-[url('https://img.freepik.com/free-photo/group-doctors-standing-hospital-corridor_23-2149241232.jpg?w=740&t=st=1691409040~exp=1691409640~hmac=b97ef96dbb69c40d8b94db78cc6ec9392a10a52b469f2a4d5dcd92f1667a1119')] bg-cover min-h-screen bg-center">
+    </div>
+
+    <div class="text-box w-[90%] mx-auto p-10 lg:w-1/3 bottom-10 lg:bottom-20 bg-amber-200 absolute left-[50%] -translate-x-[50%] lg:-translate-x-0">
+      <h1 class="text-3xl md:text-5xl mb-5 font-bold">Caring for You Every Step</h1>
+      <p class="text-sm md:text-lg mb-6">
+        Your trusted partner in health — compassionate care and modern treatments for a better tomorrow.
+      </p>
+      <a href="/pages/register.html">
+        <button class="mt-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+          Get Started
+        </button>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="flex flex-col gap-10 p-10">
+
+    <!-- First block: Image left, Text right -->
+    <div class="flex flex-col lg:flex-row items-center gap-10">
+      <img src="https://img.freepik.com/free-photo/group-doctors-standing-hospital-corridor_23-2149241232.jpg?w=740&t=st=1691409040~exp=1691409640~hmac=b97ef96dbb69c40d8b94db78cc6ec9392a10a52b469f2a4d5dcd92f1667a1119" 
+           alt="Doctors" 
+           class="w-full lg:w-1/2 lg:h-[400px] object-cover object-center rounded-lg shadow-md">
+      
+      <div class="text-center lg:text-left lg:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Caring for You Every Step</h2>
+        <p class="text-lg leading-relaxed">
+          Your trusted partner in health — compassionate care and <br>
+          modern treatments for a better tomorrow.<br>
+          Discover comprehensive medical care with HospitalPro, <br>
+          your all-in-one solution for wellness and recovery. <br>
+          Share your journey and let us tailor our care to meet your<br>
+          needs. We're committed to enhancing your hospital experience.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Second block: Text left, Image right -->
+    <div class="flex flex-col lg:flex-row-reverse items-center gap-10 mt-25">
+      <img src="/Image/Finance Tracker.jpg" 
+           alt="Hospital Finance" 
+           class="w-full lg:w-1/2 lg:h-[400px] object-cover object-center rounded-lg shadow-md">
+  
+      <div class="text-center lg:text-left lg:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Enhance Your Health, Shape Our Hospital</h2>
+        <p class="text-lg leading-relaxed">
+          Discover comprehensive medical care with HospitalPro, <br>
+          your all-in-one solution for wellness and recovery. <br>
+          Share your journey and let us tailor our care to meet your<br>
+          needs. We're committed to enhancing your hospital experience.
+        </p>
+        <a href="/pages/enroll.html">
+          <button class="mt-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+            Enroll for aprogram
+          </button>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+
+<!-- Footer -->
+<footer id="contact" class="bg-violet-100 text-center py-6">
+  <div class="footer-content">
+    <p>&copy; 2024 HospitalPro. All rights reserved.</p>
+    <p>Contact us at: hospital@example.com</p>
+    <p>Phone: +254 700000000</p>
+    <p>Location: Kenya</p>
+  </div>
+</footer>
+
+</body>
+</html>

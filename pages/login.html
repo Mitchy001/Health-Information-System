@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Login</title>
+</head>
+<body class="font-sans bg-gray-100 min-h-screen">
+
+<!-- Header/Nav -->
+<header>
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-3 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-400 shadow-md h-[80px]">
+    <div class="w-[120px]">
+        <img src="https://logo.com/image-cdn/images/kts928pd/production/60e599ade79ad1bfbf281f9970beb13f45b14abb-93x36.webp?w=128&q=72&fm=webp" alt="logo" class="max-h-[60px] w-auto">
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal flex gap-5 px-1 py-5 items-center">
+        <li><a href="/index.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Home</a></li>
+        <li><a href="/pages/About.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">About</a></li>
+        <li><a href="/pages/services.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Services</a></li>
+        <li><a href="/pages/departments" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Departments</a></li>
+        <li><a href="/pages/facilities" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Facilities</a></li>
+        <li><a href="/pages/contact" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Login Section -->
+<main class="pt-32 flex flex-col items-center justify-center min-h-screen px-4">
+
+  <!-- Avatar Image -->
+  <div class="mb-8">
+    <img src="/Image/login.jpg" alt="Login Avatar" class="w-40 h-40 object-cover rounded-full shadow-md">
+  </div>
+
+  <!-- Login Form -->
+  <section class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+    <h2 class="text-3xl font-bold text-center mb-6">Login</h2>
+
+    <form id="login-form" class="space-y-5">
+      <!-- Username -->
+      <div class="flex flex-col">
+        <label for="login-username" class="text-sm font-medium mb-1">Username</label>
+        <input type="text" id="login-username" name="username" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400">
+      </div>
+
+      <!-- Password -->
+      <div class="flex flex-col">
+        <label for="login-password" class="text-sm font-medium mb-1">Password</label>
+        <input type="password" id="login-password" name="password" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400">
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-violet-500 text-white py-3 rounded-lg font-semibold hover:bg-violet-600 transition duration-300">
+        Login
+      </button>
+    </form>
+
+    <!-- Don't have an account? -->
+    <p class="text-center mt-4 text-sm">
+      Don't have an account?
+      <a href="register.html" class="text-violet-600 font-semibold hover:underline">Register</a>
+    </p>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-violet-100 text-center py-6 mt-16">
+  <div class="footer-content">
+    <p>&copy; 2024 FeedbackPro. All rights reserved.</p>
+    <p>Contact us at: feedback@example.com</p>
+    <p>Phone: +254 700000000</p>
+    <p>Location: Kenya</p>
+  </div>
+</footer>
+
+</body>
+</html>

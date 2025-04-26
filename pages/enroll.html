@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Enroll New Client</title>
+</head>
+<body class="font-sans bg-gray-100 min-h-screen">
+
+<!-- Header/Nav -->
+<header>
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 py-3 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-400 shadow-md h-[80px]">
+    <div class="flex items-center h-full">
+      <a class="btn btn-ghost text-xl" href="index.html">
+        <div class="w-[120px]">
+          <img src="https://logo.com/image-cdn/images/kts928pd/production/60e599ade79ad1bfbf281f9970beb13f45b14abb-93x36.webp?w=128&q=72&fm=webp" alt="logo" class="max-h-[60px] w-auto">
+        </div>
+      </a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal flex gap-5 px-1 py-5 items-center">
+        <li><a href="index.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Home</a></li>
+        <li><a href="/pages/About.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">About</a></li>
+        <li><a href="/pages/services.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Services</a></li>
+        <li><a href="/pages/departments.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Departments</a></li>
+        <li><a href="facilities.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Facilities</a></li>
+        <li><a href="contact.html" class="text-lg py-2 hover:bg-violet-600 hover:text-white rounded-md px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<main class="pt-32 px-4 flex justify-center items-center min-h-screen">
+
+  <!-- Container for Enroll Form -->
+  <div class="flex space-x-12 w-full max-w-screen-lg">
+
+    <!-- Enroll New Client Form -->
+    <section class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md flex-1">
+      <h2 class="text-3xl font-bold text-center mb-6">Enroll New Client</h2>
+      
+      <form id="enroll-form" action="/enroll" method="POST" class="space-y-5">
+        <div class="flex flex-col">
+          <label for="name" class="text-sm font-medium mb-1">Full Name</label>
+          <input type="text" id="name" name="name" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400" placeholder="Enter Full Name">
+        </div>
+        <div class="flex flex-col">
+          <label for="age" class="text-sm font-medium mb-1">Age</label>
+          <input type="number" id="age" name="age" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400" placeholder="Enter Age">
+        </div>
+        <div class="flex flex-col">
+          <label for="gender" class="text-sm font-medium mb-1">Gender</label>
+          <select id="gender" name="gender" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="flex flex-col">
+          <label for="address" class="text-sm font-medium mb-1">Address</label>
+          <input type="text" id="address" name="address" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400" placeholder="Enter Address">
+        </div>
+        <div class="flex flex-col">
+          <label for="programs" class="text-sm font-medium mb-1">Programs</label>
+          <select id="programs" name="programs" required class="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-400">
+            <option value="">Select Program</option>
+            <option value="TB">TB</option>
+            <option value="HIV">HIV</option>
+            <option value="Malaria">Malaria</option>
+          </select>
+        </div>
+
+        <!-- Enroll Button -->
+        <button type="submit" class="w-full bg-violet-500 text-white py-3 rounded-lg font-semibold hover:bg-violet-600 transition duration-300">
+          Enroll Client
+        </button>
+      </form>
+    </section>
+
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="bg-violet-100 text-center py-6 mt-16">
+  <div class="footer-content">
+    <p>&copy; 2024 Health System. All rights reserved.</p>
+    <p>Contact us at: health@example.com</p>
+    <p>Phone: +254 700000000</p>
+    <p>Location: Kenya</p>
+  </div>
+</footer>
+<script src="/server.js"></script>
+
+</body>
+</html>
